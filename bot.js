@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = '$'
+const prefix = '-'
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -41,11 +41,11 @@ client.on('message', message => {
         .setColor("#000000")
         .setDescription(`
                -=- اوامر بورد كاست -=-
-  ❖$bc [message] | بورد كاست للكل و مطور
-  ❖$2bc [message] | بورد كاست للكل غير مطور
-  ❖$3bc [message] | بورد كاست للونلاين غير مطور
-  ❖$4bc [message] | بورد كاست للونلاين مطور
-  ❖$role-bc @rank [message] | رساله لكل من يملك الرتبه الممشنه
+  ❖-bc [message] | بورد كاست للكل و مطور
+  ❖-2bc [message] | بورد كاست للكل غير مطور
+  ❖-3bc [message] | بورد كاست للونلاين غير مطور
+  ❖-4bc [message] | بورد كاست للونلاين مطور
+  ❖-role-bc @rank [message] | رساله لكل من يملك الرتبه الممشنه
   `)
      message.author.sendEmbed(embed)
      message.reply('تم ارسالك اوامر البورد كاست بلخاص')
