@@ -48,7 +48,6 @@ client.on('message', message => {
   ❖-role-bc @rank [message] | رساله لكل من يملك الرتبه الممشنه
   `)
      message.author.sendEmbed(embed)
-     message.reply('تم ارسالك اوامر البورد كاست بلخاص')
     }
 });
 
