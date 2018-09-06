@@ -1,6 +1,5 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = '-'
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -34,7 +33,7 @@ client.user.setGame(`Crystal The best`,"http://twitch.tv/Crystal")
 client.login(process.env.BOT_TOKEN);
 
 
-
+var prefix = "-"
 client.on('message', message => {
     if (message.content.startsWith(prefix + 'help')) {
     const embed = new Discord.RichEmbed() 
@@ -51,6 +50,8 @@ client.on('message', message => {
     }
 });
 
+
+var prefix = "-"
 client.on('message', message => {
     if (message.author.id === client.user.id) return;
     if (message.guild) {
@@ -79,7 +80,7 @@ return;
 
 
 
-
+var prefix = "-"
 client.on('message', message => {
 if (message.author.id === client.user.id) return;
 if (message.guild) {
@@ -106,7 +107,7 @@ if(!message.member.hasPermission('ADMINISTRATOR')) return;
 
 
 
-
+var prefix = "-"
 client.on("message", message => {
 
             if (message.content.startsWith(prefix + "3bc")) {
