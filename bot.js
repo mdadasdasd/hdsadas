@@ -65,7 +65,7 @@ return;
         message.guild.members.forEach(m => {
                  if (!message.member.hasPermission("ADMINISTRATOR"))  return;
 		var bc = new Discord.RichEmbed()
-			.addField(':earth_americas:  » سيرفر : ', message.guild.name)
+			.addField('Crystal bc')
 			.addField(':thinking:  » راسل : ', message.author.username)
             .addField(':pencil:  » الرسالة : ', args)
             .setColor('#ff0000')
@@ -133,7 +133,7 @@ client.on("message", message => {
   var argresult = args.join(' '); 
   message.guild.members.filter(m => m.presence.status !== 'offline').forEach(m => {
       var bc = new Discord.RichEmbed()
-	  		.addField(':earth_americas:  » سيرفر : ', message.guild.name)
+	  		.addField('Crystal bc')
 			.addField(':thinking:  » راسل : ', message.author.username)
             .addField(':pencil:  » الرسالة : ', args)
 			            m.send(`${m}`,{embed: bc});
